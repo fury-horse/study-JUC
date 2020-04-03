@@ -16,6 +16,5 @@ public class T {
 			System.out.println(Thread.currentThread().getName() + " count = " + count);
 		}
 	}
-	
 }
 

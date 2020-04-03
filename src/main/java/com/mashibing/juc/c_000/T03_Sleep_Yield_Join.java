@@ -3,8 +3,8 @@ package com.mashibing.juc.c_000;
 public class T03_Sleep_Yield_Join {
     public static void main(String[] args) {
 //        testSleep();
-//        testYield();
-        testJoin();
+//        testJoin();
+        testYield();
     }
 
     static void testSleep() {
@@ -22,12 +22,10 @@ public class T03_Sleep_Yield_Join {
     }
 
     static void testYield() {
-        new Thread(()->{
+        new Thread(() -> {
             for(int i=0; i<100; i++) {
                 System.out.println("A" + i);
                 if(i%10 == 0) Thread.yield();
-
-
             }
         }).start();
 
@@ -53,7 +51,6 @@ public class T03_Sleep_Yield_Join {
         });
 
         Thread t2 = new Thread(()->{
-
             try {
                 t1.join();
             } catch (InterruptedException e) {
