@@ -23,7 +23,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class TicketSeller4 {
 	static Queue<String> tickets = new ConcurrentLinkedQueue<>();
-	
+
 	
 	static {
 		for(int i=0; i<1000; i++) tickets.add("Æ± ±àºÅ£º" + i);

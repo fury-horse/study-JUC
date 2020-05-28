@@ -8,7 +8,7 @@ package com.mashibing;
 * @date    2020年03月18日 17:28:05
 **/
 public class U {
-    public void sleep(long millis) {
+    public static void sleep(long millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
